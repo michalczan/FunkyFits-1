@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funky Fits™</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="fotky/Snímka obrazovky 2024-06-19 160326.png">
+  <!-- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--fcffffffffffffffffffffffffffffffffff-->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="inventory.html">Inventory</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+  <!--fcffffffffffffffffffffffffffffffffff-->
+
+  <h2 class="blur">Here are all your pieces!</h2>
+  <h6>Let’s dive in!</h6>
+
+  <div style="margin-bottom: 20px; margin-top: 20px;">
+    <button class="btn active" onclick="filterSelection('all')">
+      Show all
+    </button>
+    <button class="btn" onclick="filterSelection('pants')">Pants</button>
+    <button class="btn" onclick="filterSelection('tops')">Tops</button>
+    <button class="btn" onclick="filterSelection('shoes')">Shoes</button>
+    <button class="btn" onclick="filterSelection('hats')">Hats</button>
+  </div>
+
+  <div id="inventory-container" style="overflow: hidden;">
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/kratasy_cervene_retro.jpg" alt="Mountains" />
+          <h5>Záchranárske šortky</h5>
+        </div>
+      </div>
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/rifle_jepp.jpg" alt="Lights" />
+          <h5>Modré Rifle</h5>
+        </div>
+      </div>
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/sustaky_adidas.jpg" alt="Nature" />
+          <h5>Adidas Track</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/dres_dlhy_lotto.jpg" alt="Car" />
+          <h5>Lotto Dres</h5>
+        </div>
+      </div>
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/ibiza_bikeweek.jpg" alt="Car" />
+          <h5>Ibiza BikeWeek 2000</h5>
+        </div>
+      </div>
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/polo_brazilia.jpg" alt="Car" />
+          <h5>Brazília polo</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/tricko_ala_lubos_blaha.jpg" alt="Car" />
+          <h5>Che Guevara T</h5>
+        </div>
+      </div>
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/manchestraky_mac.jpg" alt="Car" />
+          <h5>Manchestraky Mac</h5>
+        </div>
+      </div>
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/mikina_siva_kapucna.jpg" alt="Car" />
+          <h5>Grey Hoodie</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/flanelka_modro_hneda.jpg" alt="Car" />
+          <h5>Blue ´n´ Brown Flannel Shirt</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/rifle_cierne.jpg" alt="Car" />
+          <h5>Black Jeans</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/teplaky_mike.jpg" alt="Car" />
+          <h5>Nike Sweatpants</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/kosela_kratka_zvisle_pasiky.jpg" alt="Car" />
+          <h5>Striped Shirt 1</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/kosela_kratka_indicka.jpg" alt="Car" />
+          <h5>Indian Shirt</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/champion_sveter.jpg" alt="Car" />
+          <h5>Bordeaux Champion Sweater</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/rifle_levis.jpg" alt="Car" />
+          <h5>Levis Jeans</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/nohavice_turistika_brugi.jpg" alt="Car" />
+          <h5>Hybrid Outdoor Brugi Pants</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/biele_tielko.jpg" alt="Car" />
+          <h5>Plain White Tank Top</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/adidas_dres_cerveny.jpg" alt="Car" />
+          <h5>Adidas Jersey</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/kratasy_polo_sport.jpg" alt="Car" />
+          <h5>Ralph Lauren Sport Shorts</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/polo_pasikave.jpg" alt="Car" />
+          <h5>Striped Polo Shirt</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/nohavice_lezecke.jpg" alt="Car" />
+          <h5>Alpine Pro Outdoor Pants</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/kosela_dlha_zelena.jpg" alt="Car" />
+          <h5>Green Flannel Shirt</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/kosela_kratka_stvorceky_modra.jpg" alt="Car" />
+          <h5>
+            Checkered <br />
+            Blue´n´ White Shirt
+          </h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/kosela_kratka_zvisle_pasiky_zelene.jpg" alt="Car" />
+          <h5>Striped Shirt 2</h5>
+        </div>
+      </div>
+
+      <div class="column pants">
+        <div class="content">
+          <img src="nohavice/teplaky_random.jpg" alt="Car" />
+          <h5>Off-Brand Sweatpants</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/mikina_monster.jpg" alt="Car" />
+          <h5>Ken Block 42 x Monster Energy</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/tricko_iron_maiden.jpg" alt="Car" />
+          <h5>Vintage Iron Maiden Shirt</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/tricko_peru.jpg" alt="Car" />
+          <h5>T-Shirt from Peru</h5>
+        </div>
+      </div>
+
+      <div class="column tops">
+        <div class="content">
+          <img src="topy/vangog.jpg" alt="Car" />
+          <h5>
+            Vinz van Gogh <br />
+            T-Shirt
+          </h5>
+        </div>
+      </div>
+
+      <div class="column shoes">
+        <div class="content">
+          <img src="boty/IMG_0074.jpeg" alt="Car" />
+          <h5>
+            Adidas Superstar Black
+          </h5>
+        </div>
+      </div>
+
+      <div class="column shoes">
+        <div class="content">
+          <img src="boty/IMG_0075.jpeg" alt="Car" />
+          <h5>
+            Nike Air Max 95
+          </h5>
+        </div>
+      </div>
+
+      <div class="column shoes">
+        <div class="content">
+          <img src="boty/IMG_0076.jpeg" alt="Car" />
+          <h5>
+            Vans Mn Cladrone
+          </h5>
+        </div>
+      </div>
+
+      <div class="column hats">
+        <div class="content">
+          <img src="ciapky/IMG_0078.webp" alt="Car" />
+          <h5>T-Shirt from Peru</h5>
+        </div>
+      </div>
+
+      <div class="column hats">
+        <div class="content">
+          <img src="ciapky/IMG_0079.webp" alt="Car" />
+          <h5>
+            Vinz van Gogh <br />
+            T-Shirt
+          </h5>
+        </div>
+      </div>
+
+      <div class="column hats">
+        <div class="content">
+          <img src="ciapky/IMG_0080.webp" alt="Car" />
+          <h5>
+            Adidas Superstar Black
+          </h5>
+        </div>
+      </div>
+
+      <div class="column hats">
+        <div class="content">
+          <img src="ciapky/IMG_0081.webp" alt="Car" />
+          <h5>
+            Nike Air Max 95
+          </h5>
+        </div>
+      </div>
+
+      <div class="column hats">
+        <div class="content">
+          <img src="ciapky/IMG_0082.webp" alt="Car" style="mix-blend-mode: normal;"/>
+          <h5>
+            Vans Mn Cladrone
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

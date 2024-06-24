@@ -1,0 +1,488 @@
+body {
+    background-color: rgb(24, 20, 44);
+    padding: 0 40px;
+    /* Add padding to the left and right of the body */
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 10vw;
+    color: transparent;
+    text-shadow: 0 0 8px rgb(251, 251, 198);
+    z-index: 99999;
+    transition: 2s;
+    color: rgb(251, 251, 198);
+    text-align: center;
+    margin-top: 0.2em; /* Adjusted margin top */
+  margin-bottom: 0.2em; /* Adjusted margin bottom */
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 6vw;
+    transition: none;
+    color: transparent;
+    text-shadow: 0 0 8px rgb(251, 251, 198);
+    z-index: 99999;
+    color: rgb(251, 251, 198);
+    text-align: center;
+    margin-top: 0.2em; /* Adjusted margin top */
+  margin-bottom: 0.2em; /* Adjusted margin bottom */
+}
+
+h5 {
+    color: antiquewhite;
+    font-size: 1.4vw;
+    text-align: center;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 200;
+}
+
+h6 {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: center;
+    color: rgba(255, 255, 189, 0.553);
+    margin-top: 0.2em; /* Adjusted margin top */
+  margin-bottom: 0.2em; /* Adjusted margin bottom */
+}
+
+.divider {
+    height: 1px; /* Height of the divider line */
+    background-color: rgb(251, 251, 198); /* Color of the divider */
+    width: 35%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the divider horizontally and adjust vertical margin */
+    box-shadow: 0 0 8px rgb(251, 251, 198);
+  }
+
+button {
+    color: rgb(251, 251, 198);
+    background-color: #526b98;
+    border: 1px solid rgb(255, 157, 0);
+    font-size: 1vw;
+    border-radius: 15px;
+    padding: 20px 60px;
+    cursor: pointer;
+    font-family: "Wix Madefor Display", sans-serif;
+
+}
+
+button:hover {
+    color: #1b3b77;
+    background-color: rgb(252, 252, 220);
+    transition: 0.5s;
+    transition-property: all;
+}
+
+.center-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blur:hover {
+    color: transparent;
+    text-shadow: 0 0 8px rgb(251, 251, 198);
+    z-index: 99999;
+    transition: 1s;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #33333300;
+    z-index: 99999;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+.topnav a {
+    float: right;
+    color: rgb(251, 251, 198);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(251, 251, 198);
+    color: black;
+    filter: blur(1.5px);
+    z-index: -99999;
+    transition: 1.2s;
+    border-radius: 27%;
+}
+
+.topnav a.active {
+    background-color: #526b98;
+    color: white;
+    border-radius: 27%;
+}
+
+
+.fa {
+    padding: 31px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 92.9vh;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* ABOUT US */
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.profile-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgb(251, 251, 198);
+    transition: box-shadow 0.8s ease;
+}
+
+/* Apply grayscale filter to the second image */
+.profile-row.reverse .profile-image {
+    mix-blend-mode: luminosity;
+}
+
+/* Hover effect to enlarge the shadow */
+.profile-image:hover {
+    box-shadow: 0 0 25px rgb(251, 251, 198);
+    /* Enlarged shadow on hover */
+}
+
+.profile-text {
+    flex: 3;
+    /* More space allocated to the text */
+    padding: 10px;
+}
+
+.profile-text p {
+    color: rgba(255, 228, 196, 0.855);
+    text-align: left;
+    margin: 0;
+    /* Increase the font size */
+    line-height: 1.5;
+    /* Improve readability with more line height */
+}
+
+/* Large screens */
+@media (min-width: 2000px) {
+    .profile-text p {
+        font-size: 2.5em;
+        /* Larger font size for large screens */
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) and (max-width: 1999px) {
+    .profile-text p {
+        font-size: 1.6em;
+        /* Larger font size for large screens */
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .profile-text p {
+        font-size: 1.2em;
+        /* Moderate font size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-row {
+        flex-direction: column;
+    }
+
+    .profile-row.reverse {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .profile-text {
+        text-align: center;
+    }
+}
+
+/* --------------- INVENTORY -------------------- */
+
+/* Grid settings */
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 50px; /* Space between items */
+    padding: 50px; /* Padding around the grid */
+  }
+  
+  /* Individual column items */
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Content container with padding and uniform sizing */
+  .content {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* Maintain a square aspect ratio for the content box */
+  }
+  
+  /* Image styling */
+  .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures image fits within the container without distortion */
+    border-radius: 10px; /* Match the container's rounded corners */
+    mix-blend-mode: lighten;
+  }
+  
+  /* Heading styling */
+.content h5 {
+    position: absolute; /* Position the label absolutely within the content box */
+    bottom: 1px; /* Position 10px above the bottom of the content box */
+    width: 100%; /* Match the width of the content box */
+    text-align: center; /* Center the text horizontally */
+    color: rgb(251, 251, 198); /* Text color */
+    margin: 0; /* Remove default margin */
+    background-color: rgba(24, 20, 44, 0.8); /* Background to ensure readability */
+    padding: 5px 0; /* Vertical padding for better spacing */
+    box-sizing: border-box; /* Include padding in the element's width */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .row {
+      grid-template-columns: 1fr; /* Switch to 1 column on very small screens */
+    }
+  }
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #526b98;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(255, 240, 220);
+    transition-duration: 0.5s;
+}
+
+
+
+/*---------------------------*/
+
+
+.fa {
+    padding: 31px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 92.9vh;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* --------------- GENERATOR -------------------- */
+
+/* Main Content Styles */
+.outfit-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid Layout for Outfit Images */
+.outfit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Four equal columns */
+    gap: 20px;
+    /* Space between grid items */
+    max-width: 100%;
+    width: 100%;
+    /* Full width of the container */
+    overflow: visible;
+    /* Prevent overflow */
+}
+
+/* Individual Outfit Items */
+.outfit-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgb(251, 251, 198);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.image-checkbox {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    appearance: none;
+    background-color: rgb(24, 20, 44);
+    border: 2px solid rgb(251, 251, 198);
+    border-radius: 3px;
+}
+
+.image-checkbox:checked {
+    background-color: rgb(251, 251, 198);
+    /* Change background color when checked */
+}
+
+.image-checkbox:checked::after {
+    content: '✔';
+    /* Use 'X' as the checkmark */
+    color: rgb(24, 20, 44);
+    /* Set the color of the 'X' */
+    font-size: 16px;
+    /* Adjust font size to fit the checkbox */
+    font-weight: bold;
+    /* Make the 'X' bold */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the 'X' inside the checkbox */
+}
+
+/* Outfit Images */
+.outfit-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Ensure images cover the box */
+    max-width: 350px;
+    /* Set the maximum width */
+    max-height: 350px;
+    /* Set the maximum height */
+}
+
+/* Hover Effect */
+.outfit-item:hover .outfit-image {
+    transform: scale(1.05);
+    /* Slightly enlarge the image on hover */
+}
+
+.outfit-item:hover {
+    box-shadow: 0 0 16px rgb(251, 251, 198);
+}
+
+/* Button Styles */
+.button-52 {
+    margin-top: 40px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .outfit-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .outfit-grid {
+        grid-template-columns: 1fr;
+        /* Single column for small screens */
+    }
+
+    .button-52 {
+        width: 100%;
+        /* Full width on small screens */
+        box-sizing: border-box;
+    }
+}
+
+#inventory-container {
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(251, 251, 198);
+}
+#con-cont{
+background-color:#526b98;
+border-radius: 15%;
+height: 80vh;
+width: 40%;
+position: relative;
+left: 30%;
+padding-top: 10px;
+margin-top: 2%;
+
+
+
+}
+#lname{
+position: relative;
+left: 10%;
+border-radius: 8%;
+width: 80%;
+height: 4%;
+}
+#fname{
+    position: relative;
+    left: 10%;
+    border-radius: 30%;
+    width: 80%;
+    height: 5%;
+
+
+
+}
+.g

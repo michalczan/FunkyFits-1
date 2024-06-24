@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funky Fits™</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="fotky/Snímka obrazovky 2024-06-19 160326.png">
+  <!-- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -- FONTY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <h2 class="blur">Let's create some outfits!</h2>
+
+  <!-- Main Content -->
+  <main class="outfit-main">
+    <div class="outfit-grid">
+      <div class="outfit-item">
+        <input type="checkbox" id="checkbox-hats" class="image-checkbox" title="Lock">
+        <img src="ciapky/IMG_0078.webp" alt="Hat" class="outfit-image" id="hat-to-change">
+      </div>
+      <div class="outfit-item">
+        <input type="checkbox" id="checkbox-tops" class="image-checkbox" title="Lock">
+        <img src="topy/dres_dlhy_lotto.jpg" alt="Top" class="outfit-image" id="top-to-change">
+      </div>
+      <div class="outfit-item">
+        <input type="checkbox" id="checkbox-pants" class="image-checkbox" title="Lock">
+        <img src="nohavice/manchestraky_mac.jpg" alt="Pants" class="outfit-image" id="pants-to-change">
+      </div>
+      <div class="outfit-item">
+        <input type="checkbox" id="checkbox-boots" class="image-checkbox" title="Lock">
+        <img src="boty/IMG_0076.jpeg" alt="Shoes" class="outfit-image" id="boots-to-change">
+      </div>
+    </div>
+    <button class="button-52" onclick="generateFit()">Generate a Fit!</button>
+  </main>
+</body>
+
+</html>
