@@ -125,3 +125,4 @@ function getRandomIndex(currentIndex, arrayLength) {
   } while (newIndex === currentIndex);
   return newIndex;
 }
+
